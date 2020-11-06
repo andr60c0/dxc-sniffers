@@ -1,0 +1,22 @@
+{
+  "name": "dxc_site",
+  "version": "1.0.0",
+  "description": "DXC case project",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laur507p/dxc-sniffers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laur507p/dxc-sniffers/issues"
+  },
+  "homepage": "https://github.com/laur507p/dxc-sniffers#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
