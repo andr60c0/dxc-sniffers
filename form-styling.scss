@@ -11,6 +11,7 @@ img {
 }
 
 // fonts
+
 @font-face {
   font-family: "gt-walsheim-bold";
   src: url(fonts/GT-Walsheim-Pro-Bold.woff);
@@ -51,4 +52,11 @@ img {
   src: url(fonts/GT-Walsheim-Pro-Light-Oblique.woff);
   font-style: oblique;
   font-weight: lighter;
+}
+
+h1 {
+  font-family: "gt-walsheim-bold-oblique";
+  font-style: normal;
+  font-weight: bold;
+  color: red;
 }

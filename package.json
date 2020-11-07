@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/laur507p/dxc-sniffers#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.29.0"
   }
 }
