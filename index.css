@@ -1,0 +1,144 @@
+:root {
+  --main-color: #6f2c91;
+  --light-background: #d9d9d9;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "gt-walsheim-light";
+  src: url(fonts/GT-Walsheim-Pro-Light.woff);
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "gt-walsheim-bold";
+  src: url(fonts/GT-Walsheim-Pro-Bold.woff);
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "gt-walsheim-bold";
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "gt-walsheim-bold";
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "gt-walsheim-bold";
+  font-size: 1.2rem;
+  margin: 2vh 0;
+}
+
+p {
+  font-family: "gt-walsheim-light";
+  font-size: 0.8rem;
+  margin: 2vh 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 2vw 5vw 2vw 5vw;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0;
+  padding: 2vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Specifik styling  */
+
+#splash.container {
+  background-color: var(--main-color);
+  margin: 0;
+  height: 50vh;
+}
+
+#assets .column {
+  flex-basis: 28%;
+  margin: 2vw;
+  background-color: var(--light-background);
+}
+
+#assets h2 {
+  margin: 3vw 3vw 3vw 0;
+}
+
+#assets img {
+  width: 60%;
+}
+
+#assets figure {
+  text-align: center;
+  margin: 1vw;
+}
+
+#video.container {
+  background-color: black;
+  height: 50vh;
+  margin: 0;
+}
+
+#blog.container {
+  justify-content: center;
+}
+
+#blog > .row {
+  width: 60vw;
+}
+
+#blog .column {
+  margin: 3vw;
+  flex-basis: 40%;
+  flex-grow: 1;
+  background-color: black;
+}
+
+#blog h3,
+#blog p {
+  color: white;
+}
+
+#blog img {
+  height: 15vh;
+  object-fit: cover;
+}
+
+#blog figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#contact.container {
+  background-color: black;
+  margin: 0;
+  height: 50vh;
+}
+/* .center {
+  text-align: center;
+} */
