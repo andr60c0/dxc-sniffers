@@ -41,6 +41,11 @@ p {
   margin: 2vh 0;
 }
 
+button {
+  max-width: 150px;
+  text-align: center;
+}
+
 .container {
   width: 100%;
   height: auto;
@@ -99,7 +104,7 @@ footer {
 
 #video.container {
   background-color: black;
-  height: 50vh;
+  height: 60vh;
   margin: 0;
 }
 
@@ -108,23 +113,27 @@ footer {
 }
 
 #blog > .row {
+  justify-content: center;
   width: 60vw;
 }
 
 #blog .column {
+  max-width: 300px;
   margin: 3vw;
-  flex-basis: 40%;
+  flex-basis: 35%;
   flex-grow: 1;
   background-color: black;
+  padding: 0 0 3vw 0;
 }
 
 #blog h3,
 #blog p {
+  padding: 0 2vw;
   color: white;
 }
 
 #blog img {
-  height: 15vh;
+  height: 20vh;
   object-fit: cover;
 }
 
@@ -132,6 +141,10 @@ footer {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+#blog button {
+  margin: 0 0 0 2vw;
 }
 
 #contact.container {
