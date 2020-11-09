@@ -3,16 +3,9 @@
 // @use '/./parcel/base/typography' as fonts;
 
 .form-container {
-  // width: 600px;
-  // height: auto;
-  // margin: 100px auto;
-  // padding: 50px;
-  // background: vars.$white;
-  // box-shadow: -12px -12px 20px, 12px 12px 20px rgba(162, 180, 198, 0.3), inset 2px 2px 4px rgba(245, 245, 245, 0.5);
-
   width: 600px;
   height: auto;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 50px;
   background: #ffffff;
   box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5), 12px 12px 20px rgba(162, 180, 198, 0.3);
@@ -27,6 +20,12 @@ input[type="text"] {
 .form-container h1 {
   font-family: "gt-walsheim-bold";
   font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-family: "gt-walsheim-regular";
+  font-size: 1rem;
   margin-bottom: 30px;
 }
 
@@ -83,16 +82,26 @@ input[type="email"]:focus {
 // }
 
 select {
+  -webkit-appearance: none;
+  appearance: none;
   padding: 16px;
   background-color: vars.$white;
   color: vars.$black;
   font-family: vars.$font-bold;
   border: 2px solid vars.$black;
+  border-radius: 0;
   display: block;
   margin: 16px 0;
   width: 100%;
   outline: none;
   text-transform: uppercase;
+}
+
+select::after {
+  content: "<";
+  color: black;
+  font: 17px "Consolas", monospace;
+  transform: rotate(90deg);
 }
 
 input[type="checkbox"] {
@@ -146,4 +155,8 @@ button[type="submit"]:hover {
   color: vars.$black;
   background-color: vars.$white;
   border: 2px solid vars.$purple;
+}
+
+.dxc-logo-form {
+  width: 30%;
 }
