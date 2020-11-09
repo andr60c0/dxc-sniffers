@@ -90,7 +90,7 @@ input[type="text"]:focus {
   transition: border 0.3s;
 }
 
-/* input[type="text"]:invalid {
+input[type="text"]:invalid {
   transition: 0.3s;
   background-color: #d0021a42;
   border: 2px solid #d0011b;
@@ -102,7 +102,7 @@ input[type="text"]:invalid::after {
   font-family: var(--font-family);
   color: #d0011b;
   font-size: 0.8rem;
-} */
+}
 
 button[type="submit"] {
   outline: none;
