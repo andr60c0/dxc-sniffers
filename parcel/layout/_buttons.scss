@@ -1,0 +1,28 @@
+@use './parcel/base/variables' as vars;
+
+button {
+  max-width: 150px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  outline: none;
+  padding: 16px 50px;
+  background-color: vars.$purple;
+  color: vars.$white;
+  font-size: 1rem;
+  font-family: vars.$font-bold;
+  border: 2px solid vars.$off-white;
+  display: block;
+  margin: 16px 0;
+  transition: background-color 0.3s;
+  border: 2px solid vars.$purple;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  transition: 0.3s;
+  color: vars.$black;
+  background-color: vars.$white;
+  border: 2px solid vars.$purple;
+}

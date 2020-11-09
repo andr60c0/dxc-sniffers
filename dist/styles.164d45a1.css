@@ -1,13 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-}
-
 @font-face {
   font-family: "gt-walsheim-bold";
   src: url(/GT-Walsheim-Pro-Bold.8c6708dc.woff);
@@ -43,6 +33,277 @@ img {
   src: url(/GT-Walsheim-Pro-Light-Oblique.cdb582e1.woff);
   font-style: oblique;
   font-weight: lighter;
+}
+button {
+  max-width: 150px;
+  text-align: center;
+}
+
+button[type=submit] {
+  outline: none;
+  padding: 16px 50px;
+  background-color: #6f2c91;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "gt-walsheim-bold";
+  border: 2px solid #f5f5f5;
+  display: block;
+  margin: 16px 0;
+  transition: background-color 0.3s;
+  border: 2px solid #6f2c91;
+  margin-top: 20px;
+}
+
+button[type=submit]:hover {
+  transition: 0.3s;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #6f2c91;
+}
+
+.form-container {
+  width: 600px;
+  height: auto;
+  margin: 100px auto;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: -12px -12px 20px, 12px 12px 20px rgba(162, 180, 198, 0.3), inset 2px 2px 4px rgba(245, 245, 245, 0.5);
+}
+
+input[type=text] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-container h1 {
+  font-family: "gt-walsheim-bold";
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+input[type=text] {
+  padding: 16px;
+  background-color: #f5f5f5;
+  color: #f5f5f5;
+  font-family: "gt-walsheim-regular";
+  border: 2px solid #f5f5f5;
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type=text]:focus {
+  border: 2px solid #000000;
+  border-radius: 0;
+  transition: border 0.3s;
+}
+
+input[type=text]:invalid {
+  transition: 0.3s;
+  background-color: #d0021a42;
+  border: 2px solid #d0011b;
+  color: #000000;
+}
+
+input[type=text]:invalid::after {
+  content: "Dette felt er required";
+  font-family: "gt-walsheim-regular";
+  color: #d0011b;
+  font-size: 0.8rem;
+}
+
+select {
+  padding: 16px;
+  background-color: #ffffff;
+  color: #f5f5f5;
+  font-family: "gt-walsheim-bold";
+  border: 2px solid #000000;
+  display: block;
+  margin: 16px 0;
+  width: 100%;
+  outline: none;
+  text-transform: uppercase;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  background-color: #ffffff;
+  color: #f5f5f5;
+  font-family: "gt-walsheim-bold";
+  border: 2px solid #000000;
+  padding: 10px;
+  display: inline-block;
+  outline: none;
+  transition: 0.1s;
+  margin: 15px 15px 2px 0;
+}
+
+input[type=checkbox]:checked {
+  background-color: #0067b3;
+  border: 2px solid #0067b3;
+  transition: 0.1s;
+}
+
+#checkbox-label {
+  color: #000000;
+  font-family: "gt-walsheim-bold";
+  font-size: 0.8rem;
+  white-space: pre-line;
+  line-height: 8px;
+  padding-top: 0;
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 2vw 5vw 2vw 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0;
+  padding: 2vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Specifik styling  */
+#splash.container {
+  background-color: #6f2c91;
+  margin: 0;
+  height: 50vh;
+}
+
+#assets .column {
+  flex-basis: 28%;
+  margin: 2vw;
+  background-color: #d9d9d9;
+}
+
+#assets h2 {
+  margin: 3vw 3vw 3vw 0;
+}
+
+#assets img {
+  width: 60%;
+}
+
+#assets figure {
+  text-align: center;
+  margin: 1vw;
+}
+
+#video.container {
+  background-color: #000000;
+  height: 60vh;
+  margin: 0;
+}
+
+#blog.container {
+  justify-content: center;
+}
+
+#blog > .row {
+  justify-content: center;
+  width: 60vw;
+}
+
+#blog .column {
+  max-width: 300px;
+  margin: 3vw;
+  flex-basis: 35%;
+  flex-grow: 1;
+  background-color: #000000;
+  padding: 0 0 3vw 0;
+}
+
+#blog h3,
+#blog p {
+  padding: 0 2vw;
+  color: #ffffff;
+}
+
+#blog img {
+  height: 20vh;
+  object-fit: cover;
+}
+
+#blog figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#blog button {
+  margin: 0 0 0 2vw;
+}
+
+#contact.container {
+  background-color: #000000;
+  margin: 0;
+  height: 50vh;
+}
+
+/* .center {
+    text-align: center;
+  } */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "gt-walsheim-bold";
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "gt-walsheim-bold";
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "gt-walsheim-bold";
+  font-size: 1.2rem;
+  margin: 2vh 0;
+}
+
+p {
+  font-family: "gt-walsheim-bold";
+  font-size: 0.8rem;
+  margin: 2vh 0;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

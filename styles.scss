@@ -1,5 +1,10 @@
-// general settings
+@use './parcel/base/typography';
+@use './parcel/layout/buttons';
+@use './parcel/layout/forms';
+@use './parcel/pages/index';
+@use './parcel/base/base';
 
+// general settings
 * {
   padding: 0;
   margin: 0;
@@ -8,47 +13,4 @@
 
 img {
   width: 100%;
-}
-
-// fonts
-@font-face {
-  font-family: "gt-walsheim-bold";
-  src: url(fonts/GT-Walsheim-Pro-Bold.woff);
-  font-style: normal;
-  font-weight: bolder;
-}
-
-@font-face {
-  font-family: "gt-walsheim-bold-oblique";
-  src: url(fonts/GT-Walsheim-Pro-Bold-Oblique.woff);
-  font-style: oblique;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "gt-walsheim-regular";
-  src: url(fonts/GT-Walsheim-Pro-Regular.woff);
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "gt-walsheim-regular-oblique";
-  src: url(fonts/GT-Walsheim-Pro-Regular-Oblique.woff);
-  font-style: oblique;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "gt-walsheim-light";
-  src: url(fonts/GT-Walsheim-Pro-Light.woff);
-  font-style: normal;
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family: "gt-walsheim-light-oblique";
-  src: url(fonts/GT-Walsheim-Pro-Light-Oblique.woff);
-  font-style: oblique;
-  font-weight: lighter;
 }

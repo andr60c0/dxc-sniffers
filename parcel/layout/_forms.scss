@@ -1,0 +1,99 @@
+//forms
+@use './parcel/base/variables' as vars;
+// @use '/./parcel/base/typography' as fonts;
+
+.form-container {
+  width: 600px;
+  height: auto;
+  margin: 100px auto;
+  padding: 50px;
+  background: vars.$white;
+  box-shadow: -12px -12px 20px, 12px 12px 20px rgba(162, 180, 198, 0.3),
+    inset 2px 2px 4px rgba(245, 245, 245, 0.5);
+}
+
+input[type="text"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-container h1 {
+  font-family: "gt-walsheim-bold";
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 16px;
+  background-color: vars.$off-white;
+  color: vars.$off-white;
+  font-family: vars.$font-regular;
+  border: 2px solid vars.$off-white;
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border: 2px solid vars.$black;
+  border-radius: 0;
+  transition: border 0.3s;
+}
+
+input[type="text"]:invalid {
+  transition: 0.3s;
+  background-color: vars.$dark-red;
+  border: 2px solid vars.$red;
+  color: vars.$black;
+}
+
+input[type="text"]:invalid::after {
+  content: "Dette felt er required";
+  font-family: vars.$font-regular;
+  color: vars.$red;
+  font-size: 0.8rem;
+}
+
+select {
+  padding: 16px;
+  background-color: vars.$white;
+  color: vars.$off-white;
+  font-family: vars.$font-bold;
+  border: 2px solid vars.$black;
+  display: block;
+  margin: 16px 0;
+  width: 100%;
+  outline: none;
+  text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: vars.$white;
+  color: vars.$off-white;
+  font-family: vars.$font-bold;
+  border: 2px solid vars.$black;
+  padding: 10px;
+  display: inline-block;
+  outline: none;
+  transition: 0.1s;
+  margin: 15px 15px 2px 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: vars.$blue;
+  border: 2px solid vars.$blue;
+  transition: 0.1s;
+}
+
+#checkbox-label {
+  color: vars.$black;
+  font-family: vars.$font-bold;
+  font-size: 0.8rem;
+  white-space: pre-line;
+  line-height: 8px;
+  padding-top: 0;
+  display: inline-block;
+}

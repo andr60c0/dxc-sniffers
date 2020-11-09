@@ -1,50 +1,4 @@
-:root {
-  --main-color: #6f2c91;
-  --light-background: #d9d9d9;
-}
-
-/* Fonts */
-
-@font-face {
-  font-family: "gt-walsheim-light";
-  src: url(fonts/GT-Walsheim-Pro-Light.woff);
-  font-style: normal;
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family: "gt-walsheim-bold";
-  src: url(fonts/GT-Walsheim-Pro-Bold.woff);
-  font-style: normal;
-  font-weight: bold;
-}
-
-h1 {
-  font-family: "gt-walsheim-bold";
-  font-size: 2rem;
-}
-
-h2 {
-  font-family: "gt-walsheim-bold";
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-family: "gt-walsheim-bold";
-  font-size: 1.2rem;
-  margin: 2vh 0;
-}
-
-p {
-  font-family: "gt-walsheim-light";
-  font-size: 0.8rem;
-  margin: 2vh 0;
-}
-
-button {
-  max-width: 150px;
-  text-align: center;
-}
+@use './parcel/base/variables' as vars;
 
 .container {
   width: 100%;
@@ -78,7 +32,7 @@ footer {
 /* Specifik styling  */
 
 #splash.container {
-  background-color: var(--main-color);
+  background-color: vars.$purple;
   margin: 0;
   height: 50vh;
 }
@@ -86,7 +40,7 @@ footer {
 #assets .column {
   flex-basis: 28%;
   margin: 2vw;
-  background-color: var(--light-background);
+  background-color: vars.$light-background;
 }
 
 #assets h2 {
@@ -103,7 +57,7 @@ footer {
 }
 
 #video.container {
-  background-color: black;
+  background-color: vars.$black;
   height: 60vh;
   margin: 0;
 }
@@ -122,14 +76,14 @@ footer {
   margin: 3vw;
   flex-basis: 35%;
   flex-grow: 1;
-  background-color: black;
+  background-color: vars.$black;
   padding: 0 0 3vw 0;
 }
 
 #blog h3,
 #blog p {
   padding: 0 2vw;
-  color: white;
+  color: vars.$white;
 }
 
 #blog img {
@@ -148,10 +102,10 @@ footer {
 }
 
 #contact.container {
-  background-color: black;
+  background-color: vars.$black;
   margin: 0;
   height: 50vh;
 }
 /* .center {
-  text-align: center;
-} */
+    text-align: center;
+  } */

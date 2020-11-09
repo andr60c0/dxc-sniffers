@@ -1,0 +1,33 @@
+@use './parcel/base/variables' as vars;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: vars.$font-bold;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: vars.$font-bold;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: vars.$font-bold;
+  font-size: 1.2rem;
+  margin: 2vh 0;
+}
+
+p {
+  font-family: vars.$font-bold;
+  font-size: 0.8rem;
+  margin: 2vh 0;
+}
+
+img {
+  width: 100%;
+}
