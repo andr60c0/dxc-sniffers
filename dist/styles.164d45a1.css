@@ -35,11 +35,6 @@
   font-weight: lighter;
 }
 button {
-  max-width: 150px;
-  text-align: center;
-}
-
-button[type=submit] {
   outline: none;
   padding: 16px 50px;
   background-color: #6f2c91;
@@ -52,9 +47,10 @@ button[type=submit] {
   transition: background-color 0.3s;
   border: 2px solid #6f2c91;
   margin-top: 20px;
+  cursor: pointer;
 }
 
-button[type=submit]:hover {
+button:hover {
   transition: 0.3s;
   color: #000000;
   background-color: #ffffff;
@@ -316,7 +312,7 @@ h3 {
 }
 
 p {
-  font-family: "gt-walsheim-bold";
+  font-family: "gt-walsheim-regular";
   font-size: 0.8rem;
   margin: 2vh 0;
 }

@@ -1,11 +1,11 @@
 @use './parcel/base/variables' as vars;
 
-button {
-  max-width: 150px;
-  text-align: center;
-}
+// button {
+//   max-width: 150px;
+//   text-align: center;
+// }
 
-button[type="submit"] {
+button {
   outline: none;
   padding: 16px 50px;
   background-color: vars.$purple;
@@ -18,9 +18,10 @@ button[type="submit"] {
   transition: background-color 0.3s;
   border: 2px solid vars.$purple;
   margin-top: 20px;
+  cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button:hover {
   transition: 0.3s;
   color: vars.$black;
   background-color: vars.$white;
