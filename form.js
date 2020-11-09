@@ -3,6 +3,10 @@
 const form = document.querySelector("form");
 const formElements = form.elements;
 
+const fornavn = formElements[0].value;
+const efternavn = formElements[1].value;
+const arbejdsmail = formElements[2].value;
+
 const key = "5f96ab834b77c1637d147e00";
 const endpoint = "https://frontend2020-18a2.restdb.io/rest/dxc-signups";
 
