@@ -17,16 +17,6 @@ const endpoint = "https://frontend2020-18a2.restdb.io/rest/dxc-signups";
 window.addEventListener("load", start);
 
 function start() {
-  // const formIsValid = form.checkValidity();
-
-  // if (formIsValid) {
-  //   console.log("form is valid");
-  // } else {
-  //   console.log("form is invalid");
-  //   formElements.forEach((elm) => {
-  //     elm.setAttribute("required", true);
-  //   });
-  // }
   submitForm();
 }
 
