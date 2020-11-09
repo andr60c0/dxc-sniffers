@@ -12,12 +12,12 @@
     <div class="form-container">
       <h1>Form</h1>
       <form>
-        <input type="text" name="name" id="name" placeholder="Fornavn*">
-        <input type="text" name="lastname" id="lastname" placeholder="Efternavn*">
-        <input type="text" name="email" id="email" placeholder="Arbejdsmail*">
-        <input type="text" name="company" id="company" placeholder="Virksomhed*">
-        <input type="text" name="job" id="job" placeholder="Jobtitel*">
-        <select id="country" name="country">
+        <input type="text" name="name" id="name" placeholder="Fornavn*" required="">
+        <input type="text" name="lastname" id="lastname" placeholder="Efternavn*" required="">
+        <input type="email" name="email" id="email" placeholder="Arbejdsmail*" required="">
+        <input type="text" name="company" id="company" placeholder="Virksomhed*" required="">
+        <input type="text" name="job" id="job" placeholder="Jobtitel*" required="">
+        <select id="country" name="country" required="">
           <option value="Land" disabled="" selected="">Land</option>
           <option value="Afganistan">Afghanistan</option>
           <option value="Albania">Albania</option>
@@ -266,7 +266,7 @@
           <option value="Zambia">Zambia</option>
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
-        <input type="checkbox" name="check" id="check">
+        <input type="checkbox" required="" name="check" id="check">
         <label id="checkbox-label" for="check">Ja tak, du må gerne e-maile mig og behandle <br>
           mine data med markedsføringsformål</label>
         <button name="submit" id="submitknap" type="submit">INDSEND</button>

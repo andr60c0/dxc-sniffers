@@ -17,43 +17,37 @@ const endpoint = "https://frontend2020-18a2.restdb.io/rest/dxc-signups";
 window.addEventListener("load", start);
 
 function start() {
-  form.setAttribute("novalidate", true);
+  // const formIsValid = form.checkValidity();
 
-  form.addEventListener("submit", checkForm);
-}
-
-function checkForm() {
-  console.log("checkform");
-  const formIsValid = form.checkValidity();
-
-  if (formIsValid) {
-    console.log("form is valid");
-    // submitForm();
-  } else {
-    console.log("form is invalid");
-    formElements.forEach((elm) => {
-      elm.setAttribute("required", true);
-    });
-  }
+  // if (formIsValid) {
+  //   console.log("form is valid");
+  // } else {
+  //   console.log("form is invalid");
+  //   formElements.forEach((elm) => {
+  //     elm.setAttribute("required", true);
+  //   });
+  // }
+  submitForm();
 }
 
 function submitForm() {
-  console.log("submit form");
+  const form = document.querySelector("form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  form.preventDefault();
+    form.elements.submit.disabled = true;
 
-  form.elements.submit.disabled = true;
+    const myData = {
+      fornavn: formElements.name.value,
+      efternavn: formElements.lastname.value,
+      arbejdsmail: formElements.email.value,
+      virksomhed: formElements.company.value,
+      jobtitel: formElements.job.value,
+      land: formElements.country.value,
+    };
 
-  const myData = {
-    fornavn: formElements.name.value,
-    efternavn: formElements.lastname.value,
-    arbejdsmail: formElements.email.value,
-    virksomhed: formElements.company.value,
-    jobtitel: formElements.job.value,
-    land: formElements.country.value,
-  };
-
-  post(myData);
+    post(myData);
+  });
 }
 
 // function that posts data to restdb
