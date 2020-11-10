@@ -389,6 +389,110 @@ img {
   max-width: 50%;
 }
 
+#contact input[type=text] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#contact input[type=text] {
+  padding: 16px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "gt-walsheim-regular";
+  border: 2px solid #6f2c91;
+  display: block;
+  border-radius: 0;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+}
+
+#contact input[type=text]:focus {
+  outline: 2px solid #a55bbb;
+  border-radius: 0;
+}
+
+#contact input[type=email] {
+  padding: 16px;
+  background-color: #000000;
+  color: #f5f5f5;
+  font-family: "gt-walsheim-regular";
+  border: 2px solid #6f2c91;
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#contact input[type=email]:focus {
+  border: 2px solid #6f2c91;
+  border-radius: 0;
+  outline: 2px solid #a55bbb;
+  transition: border 0.3s;
+}
+
+#contact.container {
+  background-color: #000000;
+  margin: 0;
+  height: auto;
+}
+
+#contact form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px 120px 20px;
+}
+
+#contact h3 {
+  color: #f5f5f5;
+  font-family: "gt-walsheim-bold";
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+#contact #next {
+  outline: none;
+  padding: 16px 50px;
+  background-color: #6f2c91;
+  color: #ffffff;
+  font-size: 1rem;
+  max-width: 300px;
+  font-family: "gt-walsheim-bold";
+  border: 2px solid #ffffff;
+  margin: 16px 0;
+  text-align: center;
+  transition: background-color 0.3s;
+  border: 2px solid #6f2c91;
+  margin-top: 10px;
+  float: right;
+}
+
+#contact #next:hover {
+  transition: 0.3s;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #6f2c91;
+}
+
+footer {
+  padding: 30px;
+  font-family: "gt-walsheim-regular";
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #666666;
+  text-decoration: none;
+  padding-right: 3px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 * {
   padding: 0;
   margin: 0;
