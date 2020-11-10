@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "gt-walsheim-light";
+  src: url(fonts/GT-Walsheim-Pro-Light.woff);
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "gt-walsheim-bold";
+  src: url(fonts/GT-Walsheim-Pro-Bold.woff);
+  font-style: normal;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "gt-walsheim-bold";
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "gt-walsheim-bold";
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "gt-walsheim-bold";
+  font-size: 1.2rem;
+  margin: 2vh 0;
+}
+
+p {
+  font-family: "gt-walsheim-light";
+  font-size: 0.8rem;
+  margin: 2vh 0;
+}
+
+.sectionwrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 300px;
+}
