@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/GT-Walsheim-Pro-Bold.woff":[["GT-Walsheim-Pro-Bold.8c6708dc.woff","fonts/GT-Walsheim-Pro-Bold.woff"],"fonts/GT-Walsheim-Pro-Bold.woff"],"./fonts/GT-Walsheim-Pro-Bold-Oblique.woff":[["GT-Walsheim-Pro-Bold-Oblique.e120eaba.woff","fonts/GT-Walsheim-Pro-Bold-Oblique.woff"],"fonts/GT-Walsheim-Pro-Bold-Oblique.woff"],"./fonts/GT-Walsheim-Pro-Regular.woff":[["GT-Walsheim-Pro-Regular.a2465671.woff","fonts/GT-Walsheim-Pro-Regular.woff"],"fonts/GT-Walsheim-Pro-Regular.woff"],"./fonts/GT-Walsheim-Pro-Regular-Oblique.woff":[["GT-Walsheim-Pro-Regular-Oblique.881ab678.woff","fonts/GT-Walsheim-Pro-Regular-Oblique.woff"],"fonts/GT-Walsheim-Pro-Regular-Oblique.woff"],"./fonts/GT-Walsheim-Pro-Light.woff":[["GT-Walsheim-Pro-Light.1a81857d.woff","fonts/GT-Walsheim-Pro-Light.woff"],"fonts/GT-Walsheim-Pro-Light.woff"],"./fonts/GT-Walsheim-Pro-Light-Oblique.woff":[["GT-Walsheim-Pro-Light-Oblique.cdb582e1.woff","fonts/GT-Walsheim-Pro-Light-Oblique.woff"],"fonts/GT-Walsheim-Pro-Light-Oblique.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts/GT-Walsheim-Pro-Bold.woff":[["GT-Walsheim-Pro-Bold.8c6708dc.woff","fonts/GT-Walsheim-Pro-Bold.woff"],"fonts/GT-Walsheim-Pro-Bold.woff"],"./fonts/GT-Walsheim-Pro-Bold-Oblique.woff":[["GT-Walsheim-Pro-Bold-Oblique.e120eaba.woff","fonts/GT-Walsheim-Pro-Bold-Oblique.woff"],"fonts/GT-Walsheim-Pro-Bold-Oblique.woff"],"./fonts/GT-Walsheim-Pro-Regular.woff":[["GT-Walsheim-Pro-Regular.a2465671.woff","fonts/GT-Walsheim-Pro-Regular.woff"],"fonts/GT-Walsheim-Pro-Regular.woff"],"./fonts/GT-Walsheim-Pro-Regular-Oblique.woff":[["GT-Walsheim-Pro-Regular-Oblique.881ab678.woff","fonts/GT-Walsheim-Pro-Regular-Oblique.woff"],"fonts/GT-Walsheim-Pro-Regular-Oblique.woff"],"./fonts/GT-Walsheim-Pro-Light.woff":[["GT-Walsheim-Pro-Light.1a81857d.woff","fonts/GT-Walsheim-Pro-Light.woff"],"fonts/GT-Walsheim-Pro-Light.woff"],"./fonts/GT-Walsheim-Pro-Light-Oblique.woff":[["GT-Walsheim-Pro-Light-Oblique.cdb582e1.woff","fonts/GT-Walsheim-Pro-Light-Oblique.woff"],"fonts/GT-Walsheim-Pro-Light-Oblique.woff"],"./assets/header_image.webp":[["header_image.9f883566.webp","assets/header_image.webp"],"assets/header_image.webp"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59391" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56712" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
