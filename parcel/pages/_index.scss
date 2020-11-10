@@ -1,26 +1,20 @@
 @use './parcel/base/variables' as vars;
 
 .container {
-  width: 100%;
-  height: auto;
-  padding: 2vw 5vw 2vw 5vw;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  margin: 2vh 0;
-  padding: 2vw;
+  // display: flex;
+  // flex-direction: column;
+  // margin: 2vh 0;
+  // padding: 2vw;
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
 }
 
 footer {
@@ -31,24 +25,30 @@ footer {
 
 /* Specifik styling  */
 
-#splash.container {
-  background-color: vars.$purple;
-  margin: 0;
-  height: 50vh;
+#assets .column {
+  padding: 3vw;
+  background-color: vars.$white;
+  box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5), 12px 12px 20px rgba(162, 180, 198, 0.3);
 }
 
-#assets .column {
-  flex-basis: 28%;
-  margin: 2vw;
-  background-color: vars.$light-background;
+#assets .row {
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 5vw;
+  margin: 0 auto;
+  max-width: 2000px;
 }
 
 #assets h2 {
-  margin: 3vw 3vw 3vw 0;
+  margin: 3vw 3vw 3vw 5vw;
 }
 
+#assets p {
+  min-height: 70px;
+}
 #assets img {
-  width: 60%;
+  width: 50%;
 }
 
 #assets figure {
@@ -63,19 +63,19 @@ footer {
 }
 
 #blog.container {
-  justify-content: center;
+  margin: 5vw 15vw;
 }
 
-#blog > .row {
-  justify-content: center;
-  width: 60vw;
+#blog .row {
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-gap: 5vw;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #blog .column {
-  max-width: 300px;
-  margin: 3vw;
-  flex-basis: 35%;
-  flex-grow: 1;
   background-color: vars.$black;
   padding: 0 0 3vw 0;
 }
@@ -101,6 +101,9 @@ footer {
   margin: 0 0 0 2vw;
 }
 
+#blog .blog_title {
+  max-height: 200px;
+}
 #contact.container {
   background-color: vars.$black;
   margin: 0;

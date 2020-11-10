@@ -1,0 +1,54 @@
+#splash h1,
+#splash h2,
+#splash p {
+  color: white;
+}
+
+#splash h2 {
+  font-size: 1.5rem;
+}
+
+#splash.container {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 20% 1fr;
+  background-color: black;
+  padding: 0;
+}
+
+#splash img {
+  width: 30rem;
+}
+
+#splash.container::before {
+  content: "";
+  grid-row: 1;
+  grid-column-start: 2;
+  background: black;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+#splash .content {
+  grid-column: 1/3;
+  grid-row: 1;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 3vw 5vw;
+}
+
+#splash .header_image {
+  grid-row: 1;
+  grid-column: 2/4;
+  background-image: url("assets/header_image.webp");
+  background-size: cover;
+}
+
+#splash .column_top {
+  top: 1vh;
+}
+
+#splash .column_bottom {
+  margin: auto 0;
+  max-width: 50%;
+}
