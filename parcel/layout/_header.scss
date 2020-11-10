@@ -6,6 +6,7 @@
 
 #splash h2 {
   font-size: 1.5rem;
+  margin-bottom: 5vw;
 }
 
 #splash.container {
@@ -17,7 +18,8 @@
 }
 
 #splash img {
-  width: 30rem;
+  width: 50vw;
+  max-width: 350px;
 }
 
 #splash.container::before {
@@ -26,6 +28,7 @@
   grid-column-start: 2;
   background: black;
   clip-path: polygon(0 0, 0% 100%, 100% 0);
+  margin-left: -1px;
 }
 
 #splash .content {
@@ -51,4 +54,16 @@
 #splash .column_bottom {
   margin: auto 0;
   max-width: 50%;
+}
+
+@media only screen and (max-width: 580px) {
+  #splash.container {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  #splash img {
+    max-width: 250px;
+  }
 }
