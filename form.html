@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="/styles.164d45a1.css">
-    <!-- <link rel="stylesheet" href="form-styling.css" />
-    <link rel="stylesheet" href="styles.css" /> -->
-  <script src="/styles.164d45a1.js"></script></head>
+    <link rel="stylesheet" href="styles.scss" />
+  </head>
   <body>
     <header>
-      <img class="dxc-logo-form" src="/dxc_logo_black.e875ba92.png" alt="DXC Logo">
+      <img class="dxc-logo-form" src="assets/dxc_logo_black.png" alt="DXC Logo" />
     </header>
     <div class="form-container">
       <h1>Adgang til brochure</h1>
       <p>Til at få adgang til denne brochure skal du udfylde formen herunder, dette skal kun gøres en gang.</p>
       <form>
-        <input type="text" name="name" id="name" placeholder="Fornavn*" required="">
-        <input type="text" name="lastname" id="lastname" placeholder="Efternavn*" required="">
-        <input type="email" name="email" id="email" placeholder="Arbejdsmail*" required="">
-        <input type="text" name="company" id="company" placeholder="Virksomhed*" required="">
-        <input type="text" name="job" id="job" placeholder="Jobtitel*" required="">
-        <select id="country" name="country" required="">
-          <option value="Land" disabled="" selected="">Land</option>
+        <input type="text" name="name" id="name" placeholder="Fornavn*" required />
+        <input type="text" name="lastname" id="lastname" placeholder="Efternavn*" required />
+        <input type="email" name="email" id="email" placeholder="Arbejdsmail*" required />
+        <input type="text" name="company" id="company" placeholder="Virksomhed*" required />
+        <input type="text" name="job" id="job" placeholder="Jobtitel*" required />
+        <select id="country" name="country" required>
+          <option value="Land" disabled selected>Land</option>
           <option value="Afganistan">Afghanistan</option>
           <option value="Albania">Albania</option>
           <option value="Algeria">Algeria</option>
@@ -270,12 +268,14 @@
           <option value="Zambia">Zambia</option>
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
-        <input type="checkbox" required="" name="check" id="check">
-        <label id="checkbox-label" for="check">Ja tak, du må gerne e-maile mig og behandle <br>
-          mine data med markedsføringsformål</label>
+        <input type="checkbox" required name="check" id="check" />
+        <label id="checkbox-label" for="check"
+          >Ja tak, du må gerne e-maile mig og behandle <br />
+          mine data med markedsføringsformål</label
+        >
         <button name="submit" id="submitknap" type="submit">Download</button>
       </form>
     </div>
-    <script src="/form.d01534eb.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
