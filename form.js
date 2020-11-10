@@ -3,12 +3,22 @@
 const form = document.querySelector("form");
 const formElements = form.elements;
 
+window.addEventListener("load", start);
+
 const key = "5f96ab834b77c1637d147e00";
 const endpoint = "https://frontend2020-18a2.restdb.io/rest/dxc-signups";
 
-window.addEventListener("load", start);
+console.log(key, endpoint);
+
+let signUp = localStorage.getItem("hasSignedUp");
 
 function start() {
+  // if (signUp === "true") {
+  //   redirect();
+  // } else {
+  //   submitForm();
+  // }
+
   submitForm();
 }
 
@@ -45,5 +55,10 @@ function post(data) {
     body: postData,
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => redirect());
+}
+
+function redirect() {
+  localStorage.setItem("hasSignedUp", "true");
+  location.href = "assetpage.html";
 }
