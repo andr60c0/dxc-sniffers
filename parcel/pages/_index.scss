@@ -41,7 +41,7 @@ footer {
 }
 
 #assets h2 {
-  margin: 3vw 3vw 3vw 5vw;
+  margin: 0 0 0 5vw;
 }
 
 #assets p {
@@ -65,16 +65,17 @@ footer {
 #blog.container {
   margin: 5vw 15vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 #blog .row {
-  padding: 5vw;
+  padding: 2vw 5vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5vw;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 #blog .column {
