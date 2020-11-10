@@ -148,10 +148,6 @@ select::after {
   border: 1px solid vars.$black;
 }
 
-#checkbox-label:hover input ~ .checkmark {
-  background-color: vars.$off-white;
-}
-
 #checkbox-label input:checked ~ .checkmark {
   background-color: vars.$blue;
   border: none;
@@ -179,11 +175,11 @@ select::after {
   transform: rotate(45deg);
 }
 
-input[type="checkbox"]:checked {
-  background-color: vars.$blue;
-  border: 2px solid vars.$blue;
-  transition: 0.1s;
-}
+// input[type="checkbox"]:checked {
+//   background-color: vars.$blue;
+//   border: 2px solid vars.$blue;
+//   transition: 0.1s;
+// }
 
 button[type="submit"] {
   outline: none;
