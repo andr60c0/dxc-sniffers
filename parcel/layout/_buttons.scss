@@ -27,3 +27,8 @@ button:hover {
   background-color: transparent;
   border: 2px solid vars.$purple;
 }
+
+.black:hover {
+  transition: 0.3s;
+  color: vars.$white;
+}
