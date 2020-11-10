@@ -219,12 +219,11 @@ footer {
 }
 
 #assets .row {
-  padding: 5vw;
+  padding: 5vw 10vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
   grid-gap: 5vw;
   margin: 0 auto;
-  max-width: 2000px;
 }
 
 #assets h2 {
@@ -252,15 +251,17 @@ footer {
 
 #blog.container {
   margin: 5vw 15vw;
+  display: flex;
+  justify-content: center;
 }
 
 #blog .row {
   padding: 5vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 5vw;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 #blog .column {
@@ -299,9 +300,15 @@ footer {
   height: 50vh;
 }
 
-/* .center {
-    text-align: center;
-  } */
+@media only screen and (max-width: 820px) {
+  #assets .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #blog .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -342,6 +349,7 @@ img {
 
 #splash h2 {
   font-size: 1.5rem;
+  margin-bottom: 5vw;
 }
 
 #splash.container {
@@ -353,7 +361,8 @@ img {
 }
 
 #splash img {
-  width: 30rem;
+  width: 50vw;
+  max-width: 350px;
 }
 
 #splash.container::before {
@@ -362,6 +371,7 @@ img {
   grid-column-start: 2;
   background: black;
   clip-path: polygon(0 0, 0% 100%, 100% 0);
+  margin-left: -1px;
 }
 
 #splash .content {
@@ -389,6 +399,16 @@ img {
   max-width: 50%;
 }
 
+@media only screen and (max-width: 580px) {
+  #splash.container {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 690px) {
+  #splash img {
+    max-width: 250px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
