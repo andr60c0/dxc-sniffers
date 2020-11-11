@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="229" height="227" viewBox="0 0 229 227">
+  <defs>
+    <clipPath id="clip-videobutton">
+      <rect width="229" height="227"/>
+    </clipPath>
+  </defs>
+  <g id="videobutton" clip-path="url(#clip-videobutton)">
+    <g id="Group_81" data-name="Group 81" transform="translate(-11366 11466)">
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="108" cy="108" r="108" transform="translate(11373 -11461)" fill="#8642a0"/>
+      <path id="Path_771" data-name="Path 771" d="M53.147,0l52.007,92.377H0Z" transform="translate(11538.405 -11405.457) rotate(90)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

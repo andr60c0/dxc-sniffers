@@ -58,8 +58,35 @@ footer {
 
 #video.container {
   background-color: vars.$black;
+  width: 100%;
   height: 60vh;
   margin: 0;
+  position: relative;
+}
+
+#video img {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#video .video_overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#videobutton:hover {
+  filter: hue-rotate(320deg);
+}
+
+.hide {
+  visibility: hidden;
 }
 
 // #blog.container {
@@ -176,6 +203,10 @@ footer {
 @media only screen and (max-width: 600px) {
   #blog .column {
     padding: 0 0 5vw 0;
+  }
+
+  #video img {
+    width: 30%;
   }
 
   #blog {
