@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="styles.scss" />
-    <!-- <link rel="stylesheet" href="form-styling.css" />
-    <link rel="stylesheet" href="styles.css" /> -->
   </head>
   <body>
     <header>
@@ -270,11 +268,12 @@
           <option value="Zambia">Zambia</option>
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
-        <input type="checkbox" required name="check" id="check" />
-        <label id="checkbox-label" for="check"
-          >Ja tak, du må gerne e-maile mig og behandle <br />
-          mine data med markedsføringsformål</label
-        >
+        <label id="checkbox-label" for="check">
+          Ja tak, du må gerne e-maile mig og behandle <br />
+          mine data med markedsføringsformål
+          <input type="checkbox" required name="check" id="check">
+          <span class="checkmark"></span>
+        </label>
         <button name="submit" id="submitknap" type="submit">Download</button>
       </form>
     </div>

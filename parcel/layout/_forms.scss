@@ -3,9 +3,10 @@
 // @use '/./parcel/base/typography' as fonts;
 
 .form-container {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 50px;
   background: #ffffff;
   box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5), 12px 12px 20px rgba(162, 180, 198, 0.3);
@@ -44,6 +45,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border: 2px solid vars.$black;
+  background-color: vars.$white;
   border-radius: 0;
   transition: border 0.3s;
 }
@@ -64,8 +66,17 @@ input[type="email"] {
 input[type="email"]:focus {
   border: 2px solid vars.$black;
   border-radius: 0;
+  background-color: vars.$white;
   transition: border 0.3s;
 }
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus {
+//   border: 2px solid vars.$off-white;
+
+//   transition: background-color 5000s ease-in-out 0s;
+// }
 
 // input[type="text"]:invalid {
 //   transition: 0.3s;
@@ -97,41 +108,86 @@ select {
   text-transform: uppercase;
 }
 
-select::after {
-  content: "<";
-  color: black;
-  font: 17px "Consolas", monospace;
-  transform: rotate(90deg);
-}
-
-input[type="checkbox"] {
-  appearance: none;
-  background-color: vars.$white;
-  color: vars.$off-white;
-  font-family: vars.$font-bold;
-  border: 2px solid vars.$black;
-  padding: 10px;
-  display: inline-block;
-  outline: none;
-  transition: 0.1s;
-  margin: 15px 15px 2px 0;
-}
-
-input[type="checkbox"]:checked {
-  background-color: vars.$blue;
-  border: 2px solid vars.$blue;
-  transition: 0.1s;
-}
+// select::after {
+//   content: "<";
+//   color: black;
+//   transform: rotate(90deg);
+// }
 
 #checkbox-label {
   color: vars.$black;
   font-family: vars.$font-bold;
   font-size: 0.8rem;
-  white-space: pre-line;
-  line-height: 8px;
-  padding-top: 0;
-  display: inline-block;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
 }
+
+#checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+// input[type="checkbox"] {
+//   appearance: none;
+//   background-color: vars.$white;
+//   color: vars.$off-white;
+//   font-family: vars.$font-bold;
+//   border: 2px solid vars.$black;
+//   padding: 10px;
+//   display: inline-block;
+//   outline: none;
+//   transition: 0.1s;
+//   margin: 15px 15px 2px 0;
+//   position: absolute;
+// }
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: vars.$white;
+  border: 2px solid vars.$black;
+}
+
+#checkbox-label input:checked ~ .checkmark {
+  background-color: vars.$blue;
+  border: none;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+#checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+#checkbox-label .checkmark::after {
+  left: 9px;
+  top: 3px;
+  width: 5px;
+  height: 13px;
+  border: 2px solid vars.$white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+// input[type="checkbox"]:checked {
+//   background-color: vars.$blue;
+//   border: 2px solid vars.$blue;
+//   transition: 0.1s;
+// }
 
 button[type="submit"] {
   outline: none;

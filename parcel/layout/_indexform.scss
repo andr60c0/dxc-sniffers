@@ -1,0 +1,86 @@
+@use './parcel/base/variables' as vars;
+
+#contact input[type="text"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+#contact input[type="text"] {
+  padding: 16px;
+  background-color: vars.$black;
+  color: vars.$white;
+  font-family: vars.$font-regular;
+  border: 2px solid vars.$purple;
+  display: block;
+  border-radius: 0;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+}
+
+#contact input[type="text"]:focus {
+  outline: 2px solid rgb(165, 91, 187);
+  border-radius: 0;
+}
+
+#contact input[type="email"] {
+  padding: 16px;
+  background-color: vars.$black;
+  color: vars.$off-white;
+  font-family: vars.$font-regular;
+  border: 2px solid vars.$purple;
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#contact input[type="email"]:focus {
+  border: 2px solid vars.$purple;
+  border-radius: 0;
+  outline: 2px solid rgb(165, 91, 187);
+  transition: border 0.3s;
+}
+
+#contact.container {
+  background-color: vars.$black;
+  margin: 0;
+  height: auto;
+}
+
+#contact form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px 120px 20px;
+}
+#contact h3 {
+  color: vars.$off-white;
+  font-family: vars.$font-bold;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+#contact #next {
+  outline: none;
+  padding: 16px 50px;
+  background-color: vars.$purple;
+  color: vars.$white;
+  font-size: 1rem;
+  max-width: 300px;
+  font-family: vars.$font-bold;
+  border: 2px solid vars.$white;
+  margin: 16px 0;
+  text-align: center;
+  transition: background-color 0.3s;
+  border: 2px solid vars.$purple;
+  margin-top: 10px;
+  float: right;
+}
+
+#contact #next:hover {
+  transition: 0.3s;
+  color: vars.$white;
+  background-color: vars.$black;
+  border: 2px solid vars.$purple;
+}

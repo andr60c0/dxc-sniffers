@@ -24,6 +24,11 @@ button {
 button:hover {
   transition: 0.3s;
   color: vars.$black;
-  background-color: vars.$white;
+  background-color: transparent;
   border: 2px solid vars.$purple;
+}
+
+.black:hover {
+  transition: 0.3s;
+  color: vars.$white;
 }

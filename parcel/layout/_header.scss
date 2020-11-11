@@ -6,18 +6,21 @@
 
 #splash h2 {
   font-size: 1.5rem;
+  margin-bottom: 5vw;
 }
 
 #splash.container {
-  height: 60vh;
+  // height: 60vh;
   display: grid;
   grid-template-columns: 1fr 20% 1fr;
   background-color: black;
   padding: 0;
+  margin-bottom: 10vh;
 }
 
 #splash img {
-  width: 30rem;
+  width: 50vw;
+  max-width: 350px;
 }
 
 #splash.container::before {
@@ -26,6 +29,7 @@
   grid-column-start: 2;
   background: black;
   clip-path: polygon(0 0, 0% 100%, 100% 0);
+  margin-left: -1px;
 }
 
 #splash .content {
@@ -42,6 +46,9 @@
   grid-column: 2/4;
   background-image: url("assets/header_image.webp");
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
 }
 
 #splash .column_top {
@@ -51,4 +58,38 @@
 #splash .column_bottom {
   margin: auto 0;
   max-width: 50%;
+}
+
+// @media only screen and (max-width: 580px) {
+//   #splash.container {
+//     height: 80vh;
+//   }
+// }
+
+@media only screen and (max-width: 690px) {
+  #splash img {
+    max-width: 250px;
+  }
+
+  // #splash.container::before {
+
+  //   clip-path: polygon(0 0, 0% 100%, 100% 0);
+  //   margin-left: -1px;
+  // }
+
+  #splash.container::before {
+    clip-path: polygon(0);
+  }
+
+  #splash .header_image {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+  #splash.container {
+    grid-template-columns: 1fr 20% 2fr;
+  }
+
+  #splash .column_bottom {
+    margin: auto 0;
+    max-width: 100%;
+  }
 }
