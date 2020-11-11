@@ -28,7 +28,7 @@ footer {
 #assets .column {
   padding: 3vw;
   background-color: vars.$white;
-  box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5), 12px 12px 20px rgba(162, 180, 198, 0.3);
+  // box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5), 12px 12px 20px rgba(162, 180, 198, 0.3);
 }
 
 #assets .row {
@@ -36,7 +36,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
   grid-gap: 5vw;
-  margin: 0 auto;
+  margin: 30px auto 80px auto;
   // max-width: 2000px;
 }
 
@@ -54,6 +54,17 @@ footer {
 #assets figure {
   text-align: center;
   margin: 1vw;
+}
+
+#assets button {
+  margin: 40px 0 0 0;
+}
+
+#assets_bg {
+  background-image: url("assets/clouds_and_plane.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 10%;
 }
 
 #video.container {

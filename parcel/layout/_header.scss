@@ -44,11 +44,15 @@
 #splash .header_image {
   grid-row: 1;
   grid-column: 2/4;
-  background-image: url("assets/header_image.webp");
+  background-image: url("assets/clouds_bg.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
   background-position: center;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #splash .column_top {
