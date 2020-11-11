@@ -70,13 +70,14 @@ input[type="email"]:focus {
   transition: border 0.3s;
 }
 
-// input:-webkit-autofill,
-// input:-webkit-autofill:hover,
-// input:-webkit-autofill:focus {
-//   border: 2px solid vars.$off-white;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  // border: 2px solid vars.$off-white;
+  background-color: vars.$off-white;
 
-//   transition: background-color 5000s ease-in-out 0s;
-// }
+  // transition: background-color 5000s ease-in-out 0s;
+}
 
 // input[type="text"]:invalid {
 //   transition: 0.3s;
