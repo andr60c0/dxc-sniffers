@@ -42,7 +42,7 @@ footer {
 }
 
 #assets h2 {
-  margin: 3vw 3vw 3vw 5vw;
+  margin: 0 0 0 5vw;
 }
 
 #assets p {
@@ -66,16 +66,17 @@ footer {
 #blog.container {
   margin: 5vw 15vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 #blog .row {
-  padding: 5vw;
+  padding: 2vw 5vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5vw;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1100px;
 }
 
 #blog .column {
@@ -107,6 +108,12 @@ footer {
   background-color: vars.$black;
   margin: 0;
   height: 50vh;
+}
+
+@media only screen and (max-width: 600px) {
+  #blog .column {
+    padding: 0 0 5vw 0;
+  }
 }
 
 @media only screen and (max-width: 820px) {
