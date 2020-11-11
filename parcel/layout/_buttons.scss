@@ -32,3 +32,10 @@ button:hover {
   transition: 0.3s;
   color: vars.$white;
 }
+
+#assets button,
+#blog button {
+  margin: auto;
+  padding: 1rem;
+  justify-self: end;
+}
