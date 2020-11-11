@@ -11,6 +11,32 @@
   font-style: normal;
   font-weight: bold;
 }
+@font-face {
+  font-family: "gt-walsheim-regular";
+  src: url(fonts/GT-Walsheim-Pro-Regular.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+
+footer {
+  padding: 30px;
+  font-family: "gt-walsheim-regular";
+  color: darkgray;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer a {
+  color: darkgray;
+  text-decoration: none;
+  padding-right: 3px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
 body {
   //   background-color: #000;
@@ -140,6 +166,119 @@ section {
 #value {
   .sectionwrapper {
     flex-wrap: wrap-reverse;
+  }
+}
+
+///header
+#splash h1,
+#splash h2,
+#splash p {
+  color: white;
+}
+
+#splash h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5vw;
+}
+
+#splash #asset_page_h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
+
+#splash.container {
+  // height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 20% 1fr;
+  background-color: black;
+  padding: 0;
+  margin-bottom: 10vh;
+}
+
+#splash img {
+  width: 50vw;
+  max-width: 350px;
+}
+
+#splash.container::before {
+  content: "";
+  grid-row: 1;
+  grid-column-start: 2;
+  background: black;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  margin-left: -1px;
+}
+
+#splash .content {
+  grid-column: 1/3;
+  grid-row: 1;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 3vw 5vw;
+}
+
+#splash .header_image {
+  grid-row: 1;
+  grid-column: 2/4;
+  background-image: url("/assets/header_image.webp");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#splash .column_top {
+  top: 1vh;
+}
+
+#splash .column_bottom {
+  margin: auto 0;
+  max-width: 50%;
+}
+
+// @media only screen and (max-width: 580px) {
+//   #splash.container {
+//     height: 80vh;
+//   }
+// }
+
+@media only screen and (max-width: 690px) {
+  #splash img {
+    margin-top: 2vh;
+    width: 80%;
+  }
+
+  #splash.container::before {
+    clip-path: polygon(0);
+  }
+
+  #splash .header_image {
+    clip-path: none;
+    grid-row: none;
+  }
+  #splash.container {
+    grid-template-columns: minmax(100px, 1fr);
+  }
+
+  #splash .column_bottom {
+    margin: auto 0;
+    max-width: 100%;
+  }
+
+  #splash h1 {
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+
+  #splash h2 {
+    font-size: 1.3rem;
+    margin-top: 1vh;
   }
 }
 
