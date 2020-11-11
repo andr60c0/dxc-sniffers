@@ -53,7 +53,7 @@ p {
 }
 
 section {
-  margin: 8vw 10vw 2vw 8vw;
+  margin: 8vw 10vw 2vw 10vw;
   background-color: #fff;
 }
 
@@ -85,10 +85,22 @@ section {
 }
 
 #gavn {
-  p {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+
+  .sectionwrapper {
+    margin: 0 10vw 0 10vw;
   }
 
-  h1 {
+  .sw {
+    margin: 30vw 10vw 0 10vw;
+  }
+  .triangle_left {
+    width: 25%;
+    position: absolute;
+    top: 43vw;
+    left: 0;
   }
 }
 
@@ -105,9 +117,66 @@ section {
   }
 }
 
+#development {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  .sectionwrapper {
+    margin: 0vw 10vw 0 10vw;
+  }
+  h1 {
+    margin-top: 10vw;
+  }
+
+  .triangle_right {
+    width: 25%;
+    position: absolute;
+    top: 0vw;
+    right: 0;
+  }
+}
+
 #value {
   .sectionwrapper {
     flex-wrap: wrap-reverse;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  p {
+    max-width: none;
+  }
+
+  .sectionwrapper .col {
+    padding: 0;
+  }
+
+  section {
+    margin: 8vw 20vw 2vw 20vw;
+  }
+
+  #gavn {
+    .sw {
+      margin: 10vw 20vw 0 20vw;
+    }
+    .sectionwrapper {
+      margin: 0vw 20vw 0 20vw;
+    }
+  }
+
+  #solutions {
+    p {
+      font-size: 1rem;
+    }
+    .col {
+      padding: 0vw 20vw 0vw 20vw;
+    }
+  }
+  #development {
+    .sectionwrapper {
+      margin: 0 20vw 0 20vw;
+    }
   }
 }
 
@@ -116,29 +185,43 @@ section {
     font-size: 1rem;
   }
 
+  #value {
+    h1 {
+      margin-left: 2vw;
+    }
+  }
+
+  .img {
+    // margin-top: 5vw;
+  }
+
+  section {
+    margin: 8vw 10vw 2vw 10vw;
+  }
+
+  .sectionwrapper .col {
+    padding: 2vw;
+    flex-basis: 350px;
+  }
+
   #gavn {
     margin: 0;
 
     .sectionwrapper {
-      margin: 0vw 10vw 2vw 8vw;
+      margin: 0vw 10vw 2vw 10vw;
+    }
+    .sw {
+      margin: 10vw 30vw 0 30vw;
     }
 
-    .sw {
-      //   display: flex;
-      //   flex-wrap: wrap-reverse;
-      position: relative;
-    }
-    .column1 {
-    }
-    .column2 {
-      //   flex-grow: 3;
-      //   flex-basis: 300px;
-    }
     .triangle_left {
       width: 25%;
       position: absolute;
-      top: -2.6vw;
+      top: 43.2vw;
       left: 0;
+    }
+    .col:nth-child(4) img {
+      width: 60%;
     }
   }
 
@@ -158,7 +241,7 @@ section {
 
   #solutions {
     .col:nth-child(1) {
-      padding: 5vw 10vw 5vw 10vw;
+      padding: 5vw 5vw 5vw 12vw;
     }
     .col:nth-child(2) {
       padding: 5vw 10vw 5vw 0vw;
@@ -167,6 +250,15 @@ section {
     p {
       padding-top: 2vw;
       font-size: 1.2rem;
+    }
+  }
+
+  #development {
+    .sectionwrapper {
+      margin: 0 10vw 0 10vw;
+    }
+    p {
+      max-width: 600px;
     }
   }
 }
