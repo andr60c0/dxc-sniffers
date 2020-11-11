@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="730" height="1124" viewBox="0 0 730 1124">
+  <defs>
+    <clipPath id="clip-triangle_right">
+      <rect width="730" height="1124"/>
+    </clipPath>
+  </defs>
+  <g id="triangle_right" clip-path="url(#clip-triangle_right)">
+    <path id="Path_769" data-name="Path 769" d="M436.436,1271.767,709.422,176.879,0,0Z" transform="translate(0.076 -1.925) rotate(-14)" fill="#8642a0"/>
+  </g>
+</svg>
