@@ -83,6 +83,7 @@
 
   #splash .header_image {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    grid-column: 3/4;
   }
   #splash.container {
     grid-template-columns: 1fr 20% 2fr;

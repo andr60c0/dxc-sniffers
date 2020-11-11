@@ -94,8 +94,8 @@ input:-webkit-autofill:focus {
 // }
 
 select {
-  -webkit-appearance: none;
-  appearance: none;
+  // -webkit-appearance: none;
+  // appearance: none;
   padding: 16px;
   background-color: vars.$white;
   color: vars.$black;

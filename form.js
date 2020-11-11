@@ -13,13 +13,11 @@ console.log(key, endpoint);
 let signUp = localStorage.getItem("hasSignedUp");
 
 function start() {
-  // if (signUp === "true") {
-  //   redirect();
-  // } else {
-  //   submitForm();
-  // }
-
-  submitForm();
+  if (signUp === "true") {
+    redirect();
+  } else {
+    submitForm();
+  }
 }
 
 function submitForm() {
