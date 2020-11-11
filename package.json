@@ -4,7 +4,8 @@
   "description": "DXC case project",
   "main": "index.js",
   "scripts": {
-    "start": "parcel *.html"
+    "start": "parcel *.html",
+    "build": "parcel build *.html --public-url ./"
   },
   "repository": {
     "type": "git",
