@@ -78,29 +78,34 @@
 
 @media only screen and (max-width: 690px) {
   #splash img {
-    max-width: 250px;
+    margin-top: 2vh;
+    width: 80%;
   }
-
-  // #splash.container::before {
-
-  //   clip-path: polygon(0 0, 0% 100%, 100% 0);
-  //   margin-left: -1px;
-  // }
 
   #splash.container::before {
     clip-path: polygon(0);
   }
 
   #splash .header_image {
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    grid-column: 3/4;
+    clip-path: none;
+    grid-row: none;
   }
   #splash.container {
-    grid-template-columns: 1fr 20% 2fr;
+    grid-template-columns: minmax(100px, 1fr);
   }
 
   #splash .column_bottom {
     margin: auto 0;
     max-width: 100%;
+  }
+
+  #splash h1 {
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+
+  #splash h2 {
+    font-size: 1.3rem;
+    margin-top: 1vh;
   }
 }
