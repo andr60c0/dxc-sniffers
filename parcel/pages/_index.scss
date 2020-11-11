@@ -28,7 +28,8 @@ footer {
 #assets .column {
   padding: 3vw;
   background-color: vars.$white;
-  box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5), 12px 12px 20px rgba(162, 180, 198, 0.3);
+  box-shadow: -12px -12px 20px rgba(245, 245, 245, 0.5),
+    12px 12px 20px rgba(162, 180, 198, 0.3);
 }
 
 #assets .row {
@@ -97,10 +98,6 @@ footer {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-#blog button {
-  margin: 0 0 0 2vw;
 }
 
 #blog .blog_title {
